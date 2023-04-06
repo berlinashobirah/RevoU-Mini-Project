@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tugas RevoU</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="segitiga.js"></script>
+</head>
+<body>
+   <div class="box">
+    <div class="box1">Segitiga</div>
+    <a href="luasjajargenjang.html"><p class="p">Jajar Genjang</p></a>
+
+    <div class="box2">Luas Segitiga</div>
+    <br>
+    <center><img src="assets/segitiga.png"></center>
+    <br>
+    <p class="text">Rumus Luas  Segitiga yaitu :</p>
+
+    <center><p class="text"><b>L = 1/2 * a * t</b></p></center>
+
+    <p class="text">Dimana :<br>
+        L = Luas<br>
+        a = Panjang Alas <br>
+        t = Tinggi
+    </p>
+    <br>
+
+    <center>
+        <h1>Hitung Luas Segitiga</h1>
+    </center>
+
+    <form id="myForm">
+
+    <label for="alas">Alas Segitiga</label>
+    <input type="text" id="alas" name="alas" placeholder="Alas">
+
+    <label for="tinggi">Tinggi Segitiga Segitiga</label>
+    <input type="text" id="tinggi" name="tinggi" placeholder="Tinggi">
+        <br>
+
+        <p class="text">L = 1/2 * a * t</p>
+        <p class="text" >L = 1/2 * <span id="alas"></span> * <span id="tinggi"></span></p>
+        <p class="text" >L = <span id="luas"></span></p>
+        <br>
+
+        <button type="submit" onclick="return luassegitiga()" class="submit">Hitung</button> 
+       
+        <input class="reset" type="reset" onclick="myFunction()" value="Reset">
+        
+        </form>
+
+   <br>
+   <br>
+   <br>
+   <br>
+
+    <div class="box2">Keliling Segitiga</div>
+    <br>
+    <center><img src="assets/segitiga.png"></center>
+    <br>
+    <p class="text">Rumus Keliling Segitiga yaitu :</p>
+
+    <center><p class="text"><b>K = S1+ S2+ S3</b></p></center>
+
+    <p class="text">Dimana :<br>
+        K = Keliling<br>
+        S1 = Sisi A <br>
+        S2 = Sisi B <br>
+        S3 = Sisi C
+    </p>
+    <br>
+
+    <center>
+        <h1>Hitung Keliling Segitiga</h1>
+    </center>
+
+    <label for="fname">Sisi 1 Segitiga</label>
+    <input type="text" id="fname" name="s1" placeholder="S1">
+
+    <label for="fname">Sisi 2 Segitiga</label>
+    <input type="text" id="fname" name="s2" placeholder="S2">
+
+    <label for="fname">Sisi 3 Segitiga</label>
+    <input type="text" id="fname" name="s3" placeholder="S3">
+<br>
+<button type="submit" onclick="return hitung()" id="opt_keliling" class="submit">Hitung</button>
+       
+<input class="reset" type="reset" onclick="myFunction()" value="Reset">
+
+</div>
+</body>
+</html>
